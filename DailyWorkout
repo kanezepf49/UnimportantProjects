@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int startPushup, pushupIncrement;
+    int startSitup, situpIncrement;
+    int startLegLift, legLiftIncrement;
+    int currMonth, currDay, endDay;
+    
+    cout << "Input starting pushup amount and daily increment: " << endl;
+    cin >> startPushup << pushupIncrement;
+
+    cout << "Input starting sit-up amount and daily increment: " << endl;
+    cin >> startSitup << situpIncrement;
+    
+    cout << "Input starting leg lift amount and daily increment: " << endl;
+    cin >> startLegLift << legLiftIncrement;
+    
+    cout << "Enter current month and day, and end day of month (ex: 11 5 30): " << endl;
+    cin >> currMonth, currDay, endDay;
+    
+    int i = currDay
+    while (i <= endDay) {
+        i++
+        cout << currMonth << "/" << i << endl;
+        cout << "Pushups: " << startPushup << endl;
+        cout << "Sit-ups: " << startSitup << endl;
+        cout << "Leg Lifts: " << startLegLift << endl;
+        
+        startPushup += pushupIncrement;
+        startSitup += situpIncrement;
+        startLegLfit += legLiftIncrement;
+    }
+    cout << "And remember to stretch and enjoy some protein!"
+    
+    return 0;
+}
