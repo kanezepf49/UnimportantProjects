@@ -22,7 +22,6 @@ int main()
     
     int i = currDay;
     while (i <= endDay) {
-        i++;
         cout << currMonth << "/" << i << endl;
         cout << "Pushups: " << startPushup << endl;
         cout << "Sit-ups: " << startSitup << endl;
@@ -31,6 +30,7 @@ int main()
         startPushup += pushupIncrement;
         startSitup += situpIncrement;
         startLegLift += legLiftIncrement;
+        i++;
     }
     cout << endl << "And remember to stretch and enjoy some protein!";
     
